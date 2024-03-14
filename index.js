@@ -4,3 +4,5 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0 // Pour Safari
     console.log('test click ')
 }
+
+// Section Réalisation Galerie

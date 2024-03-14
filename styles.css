@@ -24,8 +24,9 @@ body li {
   background-color: transparent;
   cursor: pointer;
   z-index: 2;
-  background-color: #2e4a66;
   transition: 500ms ease-in-out;
+  text-shadow: 1px 1px 3px black;
+  box-shadow: 1px 1px 3px black;
 }
 
 .scroll-top-btn:hover {
@@ -151,7 +152,7 @@ header nav li:nth-child(5):hover {
 
 .about-section {
   color: white;
-  background-color: rgba(71, 98, 125, 0.9);
+  background-color: #2e4a66;
 }
 .about-section .about-article {
   display: flex;
@@ -239,9 +240,75 @@ header nav li:nth-child(5):hover {
   transform: scale(1.1);
 }
 
-.realisation-section .realisation-div h2 {
+.realisation-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.realisation-section h2 {
   font-size: 2.3em;
   text-shadow: 1px 1px 3px rgb(56, 56, 56);
+}
+.realisation-section .realisation-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  row-gap: 2em;
+}
+.realisation-section .realisation-article .realisation-card-div {
+  position: relative;
+  border-radius: 0.4em;
+  border: 1px solid black;
+  padding: 0.4em;
+  width: 31%;
+}
+.realisation-section .realisation-article .realisation-card-div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.realisation-section .realisation-article .after-card-div {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.4em;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 500ms ease-in-out;
+}
+.realisation-section .realisation-article .after-card-div h4 {
+  font-size: 1.4em;
+  margin: 1.4em 0 0 0;
+  font-weight: 400;
+}
+.realisation-section .realisation-article .after-card-div p {
+  font-size: 1em;
+  text-align: center;
+  padding: 0 1em;
+}
+.realisation-section .realisation-article .after-card-div a {
+  color: white;
+  background-color: rgb(58, 58, 58);
+  padding: 0.3em 2em;
+  border-radius: 0.4em;
+  transition: all 500ms ease-in-out;
+}
+.realisation-section .realisation-article .after-card-div a:hover {
+  text-decoration: overline underline;
+  text-decoration-style: double;
+}
+.realisation-section .realisation-article .after-card-div:hover {
+  opacity: 1;
 }
 
 footer {
