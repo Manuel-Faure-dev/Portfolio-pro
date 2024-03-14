@@ -25,6 +25,11 @@ body li {
   cursor: pointer;
   z-index: 2;
   background-color: #2e4a66;
+  transition: 500ms ease-in-out;
+}
+
+.scroll-top-btn:hover {
+  transform: rotate(360deg);
 }
 
 .container {
@@ -95,15 +100,17 @@ header nav li:nth-child(5):hover {
 .presentation-section .presentation-div {
   padding: 10em 0;
 }
-.presentation-section h1 {
+.presentation-section .presentation-div h1 {
   font-size: 2.5em;
   margin-top: 0;
+  text-shadow: 1px 1px 10px rgb(56, 56, 56);
 }
-.presentation-section p {
+.presentation-section .presentation-div p {
   margin-bottom: 3em;
   font-size: 1.4em;
+  text-shadow: 1px 1px 5px rgb(25, 25, 25);
 }
-.presentation-section .contact-me-link {
+.presentation-section .presentation-div .animation-div .contact-me-link {
   color: white;
   padding: 0.5em 1.5em;
   border-radius: 0.2em;
@@ -111,12 +118,24 @@ header nav li:nth-child(5):hover {
   position: relative;
   z-index: 1;
   border: 1px solid white;
-  transition: all 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  text-shadow: 1px 1px 5px rgb(25, 25, 25);
 }
-.presentation-section .contact-me-link:hover {
-  background-color: rgb(45, 74, 102);
-  color: white;
+.presentation-section .presentation-div .animation-div .contact-me-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 74, 102, 0.7); /* Opacité ajustable ici */
+  z-index: -1;
+}
+.presentation-section .presentation-div .animation-div .contact-me-link:hover {
+  background-color: rgba(108, 148, 187, 0.7);
   transform: scale(1.1);
+  transform: rotate(360deg);
+  z-index: 1;
 }
 
 .presentation-section::after {
@@ -126,20 +145,109 @@ header nav li:nth-child(5):hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Opacité ajustable ici */
+  background-color: rgba(0, 0, 0, 0.4); /* Opacité ajustable ici */
   z-index: -1; /* Assure que le pseudo-élément reste en arrière-plan */
 }
 
-.about-section .about-div h2 {
-  font-size: 2.2em;
+.about-section {
+  color: white;
+  background-color: rgba(71, 98, 125, 0.9);
 }
-.about-section .about-div p {
-  font-size: 1em;
+.about-section .about-article {
+  display: flex;
+  align-items: center;
+  padding: 3em 0;
+}
+.about-section .about-img-div {
+  width: 32.99%;
+}
+.about-section .about-img-div .about-img {
+  border-radius: 100%;
+  width: 90%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-section .about-text-div {
+  width: 65.99%;
+  padding: 0 3em 0 0;
+}
+.about-section .about-text-div h2 {
+  font-size: 2.3em;
+  text-shadow: 1px 1px 3px rgb(56, 56, 56);
+}
+.about-section .about-text-div p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgb(64, 62, 62);
 }
 
-.prestation-section .prestation-div {
+.prestation-section .prestation-article {
+  padding: 3em 0;
+}
+.prestation-section .prestation-article .prestation-text-div {
+  margin-top: 1em;
+}
+.prestation-section .prestation-article .prestation-text-div h2 {
+  font-size: 2.3em;
+}
+.prestation-section .prestation-article .prestation-text-div p {
+  font-size: 1em;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+.prestation-section .prestation-article .prestation-box-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3em;
+  margin-top: 3em;
+}
+.prestation-section .prestation-article .prestation-box-div .prestation-card-div {
+  border: 3px solid #2e4a66;
+  width: 25%;
+  padding: 0 1em;
+  border-radius: 1em;
+}
+.prestation-section .prestation-article .prestation-box-div .prestation-card-div h3 {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #2e4a66;
+  color: white;
+  padding: 0.4em 0;
+}
+.prestation-section .prestation-article .prestation-box-div .prestation-card-div p {
+  text-align: center;
+}
+.prestation-section .prestation-article .prestation-contact-div {
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+.prestation-section .prestation-article .prestation-contact-div .prestation-contact-link {
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 0.2em;
+  font-size: 1.4em;
+  border: 1px solid white;
+  transition: all 300ms ease-in-out;
+  background-color: rgb(45, 74, 102);
+}
+.prestation-section .prestation-article .prestation-contact-div .prestation-contact-link:hover {
+  background-color: rgb(45, 74, 102);
+  transform: scale(1.1);
+}
+
+.realisation-section .realisation-div h2 {
+  font-size: 2.3em;
+  text-shadow: 1px 1px 3px rgb(56, 56, 56);
+}
+
+footer {
   height: 100vh;
 }
-.prestation-section .prestation-div h2 {
-  font-size: 2.2em;
+footer h4 {
+  margin-top: 20em;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

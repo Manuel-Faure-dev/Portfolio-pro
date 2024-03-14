@@ -25,6 +25,10 @@ body {
     cursor: pointer;
     z-index: 2;
     background-color: #2e4a66;
+    transition: 500ms ease-in-out;
+}
+.scroll-top-btn:hover {
+    transform: rotate(360deg);
 }
 
 .container {
@@ -94,41 +98,54 @@ header {
     z-index: 1;
     .presentation-div {
         padding: 10em 0;
-    }
-    h1 {
-        font-size: 2.5em;
-        margin-top: 0;
-    }
-    p {
-        margin-bottom: 3em;
-        font-size: 1.4em;
-    }
-    .contact-me-link {
-        color: white;
-        padding: 0.5em 1.5em;
-        border-radius: 0.2em;
-        font-size: 1.4em;
-        position: relative;
-        z-index: 1;
-        border: 1px solid white;
-        transition: all 500ms ease-in-out;
-    }
-    // .contact-me-link::after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: rgba(45, 74, 102, 0.3); /* Opacité ajustable ici */
-    //     z-index: -1;
-    // }
-    .contact-me-link:hover {
-        background-color: rgb(45, 74, 102);
-        color: white;
-        transform: scale(1.1);
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+            text-shadow: 1px 1px 10px rgb(56, 56, 56);
+        }
+        p {
+            margin-bottom: 3em;
+            font-size: 1.4em;
+            text-shadow: 1px 1px 5px rgb(25, 25, 25);
+        }
+        .animation-div {
+            .contact-me-link {
+                color: white;
+                padding: 0.5em 1.5em;
+                border-radius: 0.2em;
+                font-size: 1.4em;
+                position: relative;
+                z-index: 1;
+                border: 1px solid white;
+                transition: 500ms ease-in-out;
+                text-shadow: 1px 1px 5px rgb(25, 25, 25);
+            }
+            .contact-me-link::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(
+                    45,
+                    74,
+                    102,
+                    0.7
+                ); /* Opacité ajustable ici */
+                z-index: -1;
+            }
+            .contact-me-link:hover {
+                background-color: rgb(108, 148, 187, 0.7);
+                //color: rgb(45, 74, 102);
+                transform: scale(1.1);
+                transform: rotate(360deg);
+                z-index: 1;
+            }
+        }
     }
 }
+
 .presentation-section::after {
     content: '';
     position: absolute;
@@ -136,28 +153,119 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Opacité ajustable ici */
+    background-color: rgba(0, 0, 0, 0.4); /* Opacité ajustable ici */
     z-index: -1; /* Assure que le pseudo-élément reste en arrière-plan */
 }
 
 // Section About me
 .about-section {
-    .about-div {
+    color: white;
+    background-color: rgba(71, 98, 125, 0.9);
+    .about-article {
+        display: flex;
+        align-items: center;
+        padding: 3em 0;
+    }
+    .about-img-div {
+        width: 32.99%;
+        .about-img {
+            border-radius: 100%;
+            width: 90%;
+            height: auto;
+            //border: 1px solid black;
+            object-fit: cover;
+        }
+    }
+    .about-text-div {
+        width: 65.99%;
+        padding: 0 3em 0 0;
         h2 {
-            font-size: 2.2em;
+            font-size: 2.3em;
+            text-shadow: 1px 1px 3px rgb(56, 56, 56);
         }
         p {
-            font-size: 1em;
+            font-size: 1.1em;
+            line-height: 1.7em;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px rgb(64 62 62);
         }
     }
 }
 
 // Section Prestation
 .prestation-section {
-    .prestation-div {
-        height: 100vh;
-        h2 {
-            font-size: 2.2em;
+    .prestation-article {
+        padding: 3em 0;
+        .prestation-text-div {
+            margin-top: 1em;
+            h2 {
+                font-size: 2.3em;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.7em;
+                font-weight: 500;
+            }
         }
+        .prestation-box-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3em;
+            margin-top: 3em;
+            .prestation-card-div {
+                border: 3px solid #2e4a66;
+                width: 25%;
+                padding: 0 1em;
+                border-radius: 1em;
+                h3 {
+                    text-align: center;
+                    font-size: 1.5em;
+                    background-color: #2e4a66;
+                    color: white;
+                    padding: 0.4em 0;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .prestation-contact-div {
+            margin-top: 2.5em;
+            display: flex;
+            justify-content: center;
+            .prestation-contact-link {
+                color: white;
+                padding: 0.5em 1.5em;
+                border-radius: 0.2em;
+                font-size: 1.4em;
+                border: 1px solid white;
+                transition: all 300ms ease-in-out;
+                background-color: rgb(45, 74, 102);
+            }
+            .prestation-contact-link:hover {
+                background-color: rgb(45, 74, 102);
+                //color: white;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// Section Réalisation galerie
+.realisation-section {
+    .realisation-div {
+        h2 {
+            font-size: 2.3em;
+            text-shadow: 1px 1px 3px rgb(56, 56, 56);
+        }
+    }
+}
+
+footer {
+    height: 100vh;
+    h4 {
+        margin-top: 20em;
+        text-align: center;
     }
 }
