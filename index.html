@@ -8,8 +8,14 @@
         <link rel="icon" href="./assets/logo MFD.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -29,7 +35,9 @@
                     <li class="nav-item">
                         <a href="#prestation">Prestations</a>
                     </li>
-                    <li class="nav-item"><a href="">Réalisations</a></li>
+                    <li class="nav-item">
+                        <a href="#realisation">Réalisations</a>
+                    </li>
                     <li class="nav-item-contact">
                         <a href=""><i class="fa-regular fa-envelope"></i></a>
                     </li>
@@ -48,19 +56,29 @@
                         votre site <br />
                         internet selon votre demande.
                     </p>
-                    <div class="animation-div">
-                        <a class="contact-me-link" href="">Me contacter</a>
-                    </div>
+                    <a class="contact-me-link" href="">Me contacter</a>
                 </div>
             </section>
             <!-- Section à Poropos de moi -->
             <section class="about-section" id="about">
+                <div class="about-after-div"></div>
+
                 <article class="about-article container">
+                    <div class="about-img-div">
+                        <img
+                            src="./assets/photo-manu.jpg"
+                            alt=""
+                            class="about-img"
+                        />
+                    </div>
                     <div class="about-text-div">
                         <h2>Qui suis-je ?</h2>
                         <p>
-                            Développeur freelance, je vous assiste dans la
-                            création d’un site performant et à votre image.<br />
+                            <b>
+                                Développeur freelance, je vous assiste dans la
+                                création d’un site performant et à votre image.
+                            </b>
+                            <br />
                             <br />
                             Je peux vous accompagner sur différents types de
                             projets. Du design de sites web, à la création de
@@ -78,25 +96,149 @@
                             internet.
                             <br />
                             <br />
-                            Toutes ses compétences mises bout à bout me
+                            Toutes mes compétences mises bout à bout me
                             permettent d’être présent à vos côtés de la genèse
                             de votre projet jusqu’à la fin de celui-ci.
                         </p>
                     </div>
-                    <div class="about-img-div">
+                </article>
+            </section>
+            <!-- Section  réalisations -->
+            <section class="realisation-section" id="realisation">
+                <h2 class="container">Mes réalisations</h2>
+                <article class="realisation-article container">
+                    <div class="realisation-card-div">
                         <img
-                            src="./assets/photo.png"
-                            alt=""
-                            class="about-img"
+                            src="./assets/Sites_galerie/la_coquetiere.png"
+                            alt="pizzéria la coquetière"
                         />
+                        <a
+                            href="https://manuel-faure-dev.github.io/la-Coquetiere/"
+                            >Visiter le site</a
+                        >
+                        <div class="after-card-div">
+                            <h4>Pizzéria La Coquetière</h4>
+                            <p>
+                                Site de pizza<br />
+                                a emporter à St-Jean en Royans.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img
+                            src="./assets/Sites_galerie/makizart_tattoo.png"
+                            alt=""
+                        />
+                        <div class="after-card-div">
+                            <h4>Makizart Studio Tattoo</h4>
+                            <p>
+                                Site d'un Salon de tatouage. <br />
+                                à St-Laurent en Royans.
+                            </p>
+                            <a
+                                href="https://manuel-faure-dev.github.io/Makizart-Studio-Tattoo/"
+                                >Visiter le site</a
+                            >
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img
+                            src="./assets/Sites_galerie/makizart_tattoo.png"
+                            alt=""
+                        />
+                        <div class="after-card-div">
+                            <h4>Katcha Shop</h4>
+                            <p>
+                                Site d'une boutique <br />
+                                de produits à base de CBD.
+                            </p>
+                            <a href="">Visiter le site</a>
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img src="./assets/Sites_galerie/homep3.png" alt="" />
+                        <div class="after-card-div">
+                            <h4>Sophie Bluel</h4>
+                            <p>
+                                Portfolio <br />
+                                pour une architecte d'intérieur.
+                            </p>
+                            <a
+                                href="https://manuel26190.github.io/Site-web-dynamique/"
+                                >Visiter le site</a
+                            >
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img
+                            src="./assets/Sites_galerie/detailsp6.png"
+                            alt=""
+                        />
+                        <div class="after-card-div">
+                            <h4>Kasa</h4>
+                            <p>
+                                Agence immobilière<br />
+                                de location appartements.
+                            </p>
+                            <a href="https://manuel26190.github.io/home-react/"
+                                >Visiter le site</a
+                            >
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img
+                            src="./assets/Sites_galerie/homep5bis.png"
+                            alt=""
+                        />
+                        <div class="after-card-div">
+                            <h4>Nina Carducci</h4>
+                            <p>
+                                Portfolio <br />
+                                d'une photographe.
+                            </p>
+                            <a href="https://nina-carducci.github.io/"
+                                >Visiter le site</a
+                            >
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img
+                            src="./assets/Sites_galerie/homeBlogVoyage.png"
+                            alt=""
+                        />
+                        <div class="after-card-div">
+                            <h4>Zorzor</h4>
+                            <p>
+                                Blob <br />
+                                de carnet de voyage.
+                            </p>
+                            <a
+                                href="https://manuel26190.github.io/Blog-de-voyage/"
+                                >Visiter le site</a
+                            >
+                        </div>
+                    </div>
+                    <div class="realisation-card-div">
+                        <img src="./assets/Sites_galerie/Booki.png" alt="" />
+                        <div class="after-card-div">
+                            <h4>Booki</h4>
+                            <p>
+                                Page d'accueil <br />
+                                d'une agence de voyage.
+                            </p>
+                            <a
+                                href="https://manuel26190.github.io/Creer-la-page-d-accueil-d-une-agence-de-voyage-avec-HTML-et-CSS/"
+                                >Visiter le site</a
+                            >
+                        </div>
                     </div>
                 </article>
             </section>
             <!-- Section de Prestations -->
-            <section class="prestation-section">
+            <section class="prestation-section" id="prestation">
                 <article class="prestation-article container">
                     <div class="prestation-text-div">
-                        <h2 id="prestation">Mes Prestations</h2>
+                        <h2>Mes Prestations</h2>
                         <p>
                             Entreprises, particuliers, associations, je suis à
                             votre dispositions pour vous construire le site
@@ -164,104 +306,19 @@
                     </div>
                 </article>
             </section>
-            <!-- Section  réalisations -->
-            <section class="realisation-section">
-                <h2>Réalisations</h2>
-                <article class="realisation-article container">
-                    <div class="realisation-card-div">
-                        <img
-                            src="./assets/Sites_galerie/la_coquetiere.png"
-                            alt="pizzéria la coquetière"
-                        />
-                        <div class="after-card-div">
-                            <h4>Pizzéria La Coquetière</h4>
-                            <p>
-                                Projet de site vitrine <br />
-                                d'une pizzéria à St-Jean en Royans.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img
-                            src="./assets/Sites_galerie/makizart_tattoo.png"
-                            alt=""
-                        />
-                        <div class="after-card-div">
-                            <h4>Katcha Shop</h4>
-                            <p>
-                                Projet de site vitrine <br />
-                                Boutique de produits à base de CBD, à St
-                                Marcellin.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img
-                            src="./assets/Sites_galerie/makizart_tattoo.png"
-                            alt=""
-                        />
-                        <div class="after-card-div">
-                            <h4>Makizart Studio Tattoo</h4>
-                            <p>
-                                Projet de site vitrine <br />
-                                Salon de tatouage à St-Laurent en Royans.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img src="./assets/Sites_galerie/homep3.png" alt="" />
-                        <div class="after-card-div">
-                            <h4>Sophie Bluel</h4>
-                            <p>
-                                Projet de site vitrine <br />
-                                pour une architecte d'intérieur.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img src="./assets/Sites_galerie/homep6.png" alt="" />
-                        <div class="after-card-div">
-                            <h4>Kasa</h4>
-                            <p>
-                                Projet de site vitrine <br />
-                                pour une agence immobilière.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img
-                            src="./assets/Sites_galerie/homep5bis.png"
-                            alt=""
-                        />
-                        <div class="after-card-div">
-                            <h4>Nina Carducci</h4>
-                            <p>
-                                Portfolio <br />
-                                d'une photographe.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="realisation-card-div">
-                        <img
-                            src="./assets/Sites_galerie/homeBlogVoyage.png"
-                            alt=""
-                        />
-                        <div class="after-card-div">
-                            <h4>Zorzor</h4>
-                            <p>
-                                Blob <br />
-                                de carnet de voyage.
-                            </p>
-                            <a href="">Visiter le site</a>
-                        </div>
-                    </div>
-                </article>
+            <!-- Section Travaillons ensemble  -->
+            <section class="work-together-section">
+                <div class="work-together-div container">
+                    <h2>Travaillons ensemble !</h2>
+                    <p>
+                        Construisons ensemble votre projet digital afin de créer
+                        ou de donner un nouveau souffle à votre activité !
+                        N'hésitez pas à me contacter par mail / téléphone ou via
+                        le formulaire contact, pour réserver un rendez-vous
+                        ensemble.
+                    </p>
+                    <a href="">Prendre un rendez-vous</a>
+                </div>
             </section>
         </main>
         <footer>

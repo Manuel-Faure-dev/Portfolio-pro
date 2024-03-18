@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -99,6 +99,9 @@ header nav li:nth-child(5):hover {
   z-index: 1;
 }
 .presentation-section .presentation-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 10em 0;
 }
 .presentation-section .presentation-div h1 {
@@ -111,7 +114,7 @@ header nav li:nth-child(5):hover {
   font-size: 1.4em;
   text-shadow: 1px 1px 5px rgb(25, 25, 25);
 }
-.presentation-section .presentation-div .animation-div .contact-me-link {
+.presentation-section .presentation-div .contact-me-link {
   color: white;
   padding: 0.5em 1.5em;
   border-radius: 0.2em;
@@ -122,7 +125,7 @@ header nav li:nth-child(5):hover {
   transition: 500ms ease-in-out;
   text-shadow: 1px 1px 5px rgb(25, 25, 25);
 }
-.presentation-section .presentation-div .animation-div .contact-me-link::after {
+.presentation-section .presentation-div .contact-me-link::after {
   content: "";
   position: absolute;
   top: 0;
@@ -131,12 +134,12 @@ header nav li:nth-child(5):hover {
   height: 100%;
   background-color: rgba(45, 74, 102, 0.7); /* Opacité ajustable ici */
   z-index: -1;
+  border: 1px solid white;
+  border-radius: 0.2em;
 }
-.presentation-section .presentation-div .animation-div .contact-me-link:hover {
+.presentation-section .presentation-div .contact-me-link:hover {
   background-color: rgba(108, 148, 187, 0.7);
   transform: scale(1.1);
-  transform: rotate(360deg);
-  z-index: 1;
 }
 
 .presentation-section::after {
@@ -151,51 +154,148 @@ header nav li:nth-child(5):hover {
 }
 
 .about-section {
-  color: white;
-  background-color: #2e4a66;
+  padding: 6em 0;
+  background-color: #f6d2b8;
+  color: #2e4a66;
+  position: relative;
+}
+.about-section .about-after-div {
+  content: " ";
+  background-color: #e5975f;
+  width: 374px;
+  height: 329px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 .about-section .about-article {
   display: flex;
   align-items: center;
-  padding: 3em 0;
 }
 .about-section .about-img-div {
-  width: 32.99%;
+  flex: 1;
+  z-index: 1;
 }
 .about-section .about-img-div .about-img {
-  border-radius: 100%;
   width: 90%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .about-section .about-text-div {
-  width: 65.99%;
+  flex: 2;
   padding: 0 3em 0 0;
 }
 .about-section .about-text-div h2 {
   font-size: 2.3em;
-  text-shadow: 1px 1px 3px rgb(56, 56, 56);
+}
+.about-section .about-text-div b {
+  font-style: italic;
+  font-size: 1.1em;
 }
 .about-section .about-text-div p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px rgb(64, 62, 62);
+  font-size: 1em;
 }
 
-.prestation-section .prestation-article {
+.realisation-section {
+  color: #2e4a66;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4em 0 7em 0;
+}
+.realisation-section h2 {
+  font-size: 2.3em;
+  margin-bottom: 1.4em;
+  text-align: center;
+  border-bottom: 2px solid #2e4a66;
+  border-top: 2px solid #2e4a66;
+  width: 50%;
+}
+.realisation-section .realisation-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 3em;
+       column-gap: 3em;
+  row-gap: 3em;
   padding: 3em 0;
+  background: linear-gradient(#a8d5d8, white, pink, white, #1c6474);
+}
+.realisation-section .realisation-article .realisation-card-div {
+  position: relative;
+  width: 43%;
+  cursor: pointer;
+}
+.realisation-section .realisation-article .realisation-card-div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.realisation-section .realisation-article .after-card-div {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms ease-in-out;
+}
+.realisation-section .realisation-article .after-card-div h4 {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 500;
+}
+.realisation-section .realisation-article .after-card-div p {
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0 1em;
+}
+.realisation-section .realisation-article .after-card-div a {
+  color: #2e4a66;
+  background-color: white;
+  padding: 0.4em 2.4em;
+  border-radius: 0.4em;
+  transition: all 500ms ease-in-out;
+  margin-top: 1.2em;
+  font-weight: 500;
+}
+.realisation-section .realisation-article .after-card-div a:hover {
+  transform: scale(1.1);
+  background-color: #a8d5d8;
+}
+.realisation-section .realisation-article .after-card-div:hover {
+  opacity: 1;
+}
+
+.prestation-section {
+  color: #2e4a66;
+  background-color: #a8d5d8;
+  position: relative;
+}
+.prestation-section .prestation-article {
+  padding: 4em 0;
 }
 .prestation-section .prestation-article .prestation-text-div {
   margin-top: 1em;
 }
 .prestation-section .prestation-article .prestation-text-div h2 {
+  text-align: center;
   font-size: 2.3em;
 }
 .prestation-section .prestation-article .prestation-text-div p {
-  font-size: 1em;
-  line-height: 1.7em;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1em;
   font-weight: 500;
 }
 .prestation-section .prestation-article .prestation-box-div {
@@ -206,10 +306,11 @@ header nav li:nth-child(5):hover {
   margin-top: 3em;
 }
 .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
-  border: 3px solid #2e4a66;
   width: 25%;
   padding: 0 1em;
   border-radius: 1em;
+  background-color: white;
+  z-index: 1;
 }
 .prestation-section .prestation-article .prestation-box-div .prestation-card-div h3 {
   text-align: center;
@@ -240,81 +341,53 @@ header nav li:nth-child(5):hover {
   transform: scale(1.1);
 }
 
-.realisation-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.realisation-section h2 {
-  font-size: 2.3em;
-  text-shadow: 1px 1px 3px rgb(56, 56, 56);
-}
-.realisation-section .realisation-article {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-  row-gap: 2em;
-}
-.realisation-section .realisation-article .realisation-card-div {
-  position: relative;
-  border-radius: 0.4em;
-  border: 1px solid black;
-  padding: 0.4em;
-  width: 31%;
-}
-.realisation-section .realisation-article .realisation-card-div img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-.realisation-section .realisation-article .after-card-div {
-  opacity: 0;
+.prestation-section::before {
+  content: " ";
+  background-color: #1c6474;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 0.4em;
-  border: 1px solid black;
   width: 100%;
-  height: 100%;
-  color: white;
-  top: 0;
+  height: 30%;
+  bottom: 0;
   left: 0;
+  z-index: 0;
+}
+
+.work-together-section {
+  padding: 4em 0;
+  color: #2e4a66;
+}
+.work-together-section .work-together-div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  transition: 500ms ease-in-out;
+  flex-direction: column;
 }
-.realisation-section .realisation-article .after-card-div h4 {
-  font-size: 1.4em;
-  margin: 1.4em 0 0 0;
-  font-weight: 400;
+.work-together-section .work-together-div h2 {
+  font-size: 2.3em;
 }
-.realisation-section .realisation-article .after-card-div p {
-  font-size: 1em;
+.work-together-section .work-together-div p {
   text-align: center;
-  padding: 0 1em;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-weight: 500;
 }
-.realisation-section .realisation-article .after-card-div a {
+.work-together-section .work-together-div a {
   color: white;
-  background-color: rgb(58, 58, 58);
-  padding: 0.3em 2em;
-  border-radius: 0.4em;
-  transition: all 500ms ease-in-out;
+  padding: 0.5em 1.5em;
+  border-radius: 0.2em;
+  font-size: 1.4em;
+  border: 1px solid white;
+  transition: all 300ms ease-in-out;
+  background-color: rgb(45, 74, 102);
 }
-.realisation-section .realisation-article .after-card-div a:hover {
-  text-decoration: overline underline;
-  text-decoration-style: double;
-}
-.realisation-section .realisation-article .after-card-div:hover {
-  opacity: 1;
+.work-together-section .work-together-div a:hover {
+  background-color: rgb(45, 74, 102);
+  transform: scale(1.1);
 }
 
 footer {
-  height: 100vh;
+  background-color: #1c6474;
+  color: white;
 }
 footer h4 {
-  margin-top: 20em;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */
