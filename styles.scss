@@ -80,13 +80,14 @@ header {
         li:nth-child(1):hover,
         li:nth-child(2):hover,
         li:nth-child(3):hover,
-        li:nth-child(4):hover {
+        li:nth-child(4):hover,
+        li:nth-child(5):hover {
             border-bottom: 2px solid white;
         }
-        li:nth-child(5) {
+        li:nth-child(6) {
             font-size: 1.5em;
         }
-        li:nth-child(5):hover {
+        li:nth-child(6):hover {
             transform: scale(1.2);
         }
     }
@@ -243,9 +244,7 @@ header {
         .realisation-card-div {
             position: relative;
             //border: 1px solid #2e4a66;
-
             width: 43%;
-            cursor: pointer;
             img {
                 object-fit: cover;
                 width: 100%;
@@ -339,7 +338,7 @@ header {
                     font-size: 1.5em;
                     background-color: #2e4a66;
                     color: white;
-                    padding: 0.4em 0;
+                    padding: 0.4em 0.2em;
                 }
                 p {
                     text-align: center;
@@ -383,30 +382,30 @@ header {
     color: #2e4a66;
     .work-together-div {
         display: flex;
-        //justify-content: center;
         align-items: center;
         flex-direction: column;
         h2 {
-            //text-align: center;
             font-size: 2.3em;
-            //text-shadow: 1px 1px 3px rgb(56, 56, 56);
         }
         p {
             text-align: center;
-            font-size: 1em;
+            font-size: 1.1em;
             line-height: 1.7em;
             font-weight: 500;
         }
-        a {
+        b {
+            color: #1c6474;
+        }
+        .work-contact-link {
             color: white;
-            padding: 0.5em 1.5em;
+            padding: 0.4em 1.4em;
             border-radius: 0.2em;
             font-size: 1.4em;
             border: 1px solid white;
             transition: all 300ms ease-in-out;
             background-color: rgb(45, 74, 102);
         }
-        a:hover {
+        .work-contact-link:hover {
             background-color: rgb(45, 74, 102);
             transform: scale(1.1);
         }
@@ -414,9 +413,75 @@ header {
 }
 
 footer {
-    background-color: #1c6474;
     color: white;
-    h4 {
-        text-align: center;
+    .footer-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.4em 0;
+        background-color: #1c6474;
+    }
+    .footer-contact-div {
+        row-gap: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-width: 10em;
+    }
+    a {
+        color: white;
+        img {
+            max-width: 3em;
+        }
+    }
+    .footer-mail-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+        .fa-envelope,
+        .fa-phone {
+            margin-right: 0.5em;
+        }
+    }
+    .pages-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h5 {
+            font-size: 1.4em;
+            margin: 0 0 1em 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                line-height: 2em;
+            }
+        }
+    }
+    .useful-link-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h5 {
+            font-size: 1.4em;
+            margin: 0 0 1em 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                line-height: 2em;
+            }
+        }
+    }
+    .footer-bottom-section {
+        padding: 1.5em 0;
+        background-color: #2e4a66;
+        p {
+            text-align: center;
+        }
     }
 }
