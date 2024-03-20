@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manuel Faure Développement</title>
+        <link rel="icon" href="./assets/logo MFD.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <div class="header-div">
+                    <img
+                        src="./assets/logo MFD.png"
+                        alt="logo"
+                        class="logo-img"
+                    />
+                </div>
+                <ul>
+                    <li class="nav-item"><a href="./index.html">Accueil</a></li>
+                    <li class="nav-item">
+                        <a href="./index.html#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html#prestation">Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html#realisation">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item-contact">
+                        <a href="mailto:manuel.faure.dev@gmail.com"
+                            ><i class="fa-regular fa-envelope"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contact-main">
+            <section class="page-contact-section container">
+                <h1>Me contacter</h1>
+                <article class="phone-mail-rs-article">
+                    <div class="phone-contact-div">
+                        <span
+                            ><img src="./assets/smartphone.png" alt=""
+                        /></span>
+                        <p>06.36.09.68.86</p>
+                        <p><b>Téléphone</b></p>
+                    </div>
+                    <div class="mail-contact-div">
+                        <a
+                            class="messenger-contact-link"
+                            href="mailto:manuel.faure.dev@gmail.com"
+                        >
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <p>manuel.faure.dev@gmail.com</p>
+                            <p><b>E-mail</b></p>
+                        </a>
+                    </div>
 
+                    <div class="messenger-contact-div">
+                        <a
+                            class="messenger-contact-link"
+                            href="https://m.me/manuelfauredeveloppement"
+                        >
+                            <span
+                                ><img src="./assets/messenger.png" alt=""
+                            /></span>
+
+                            <p>Facebook messenger</p>
+                            <p><b>Manuel Faure Developement</b></p>
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <form
+                action="https://formspree.io/f/mjvneepj"
+                method="POST"
+                class="contact-form"
+            >
+                <div class="name-form-div">
+                    <div class="firstname-div">
+                        <label for="firstname" class="first-name-label"
+                            >Prénom :
+                        </label>
+                        <input
+                            id="firstname"
+                            type="text"
+                            class="first-name-input"
+                            required
+                        />
+                    </div>
+                    <div class="lastname-div">
+                        <label for="lastname" class="last-name-label"
+                            >Nom :
+                        </label>
+                        <input
+                            id="lastname"
+                            type="text"
+                            class="last-name-input"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="email-div">
+                    <label for="e-mail" class="email-label">E-mail : </label>
+                    <input
+                        id="e-mail"
+                        type="email"
+                        class="email-input"
+                        required
+                    />
+                </div>
+                <div class="textarea-div">
+                    <label for="textarea-label" class="textarea-label"
+                        >Message :</label
+                    >
+                    <textarea
+                        name=""
+                        id="textarea-label"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </main>
+        <footer>
+            <section class="footer-section">
+                <div class="footer-contact-div">
+                    <img src="./assets/logo MFD.png" alt="" />
+                    <div class="footer-mail-div">
+                        <a href="mailto:manuel.faure.dev@gmail.com"
+                            ><i class="fa-regular fa-envelope"></i>
+                            manuel.faure.dev@gmail.com</a
+                        >
+                        <a href="tel:0636096886">
+                            <i class="fa-solid fa-phone"></i>06.36.09.68.86</a
+                        >
+                        <a href="">
+                            <img src="./assets/logo-fb.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="pages-div">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li class="nav-item">
+                            <img src="./assets/right-arrow.png" alt="" />
+                            <a href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/right-arrow.png" alt="" />
+                            <a href="#about">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/right-arrow.png" alt="" />
+                            <a href="#prestation">Prestations</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./assets/right-arrow.png" alt="" />
+                            <a href="#realisation">Réalisations</a>
+                        </li>
+                        <li>
+                            <img src="./assets/right-arrow.png" alt="" /><a
+                                href=""
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="useful-link-div">
+                    <h5>Liens Utiles</h5>
+                    <ul>
+                        <li>
+                            <img src="./assets/right-arrow.png" alt="" /><a
+                                href=""
+                                >Mentions légales</a
+                            >
+                        </li>
+                        <li>
+                            <img src="./assets/right-arrow.png" alt="" /><a
+                                href=""
+                                >CGV</a
+                            >
+                        </li>
+                        <li>
+                            <img src="./assets/right-arrow.png" alt="" /><a
+                                href=""
+                                >CGU</a
+                            >
+                        </li>
+                        <li>
+                            <img src="./assets/right-arrow.png" alt="" /><a
+                                href=""
+                                >Politique de confidentialité</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact-footer-bottom-section">
+                <p>Copyrights © 2024. Manuel Faure</p>
+            </section>
+        </footer>
+        <script
+            src="https://kit.fontawesome.com/8ad4ebeb56.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js"></script>
+    </body>
+</html>
