@@ -5,4 +5,7 @@ function scrollToTop() {
     console.log('test click ')
 }
 
-// Section Réalisation Galerie
+//Gestion du recaptcha
+// function onSubmit(token) {
+//     document.getElementsByTagName('form')[0].submit()
+// }
