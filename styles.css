@@ -704,6 +704,26 @@ footer .footer-bottom-section p {
   }
 }
 @media (max-width: 768px) {
+  header nav ul li:nth-child(2),
+  header nav ul li:nth-child(3),
+  header nav ul li:nth-child(4) {
+    display: none;
+  }
+  .presentation-section .presentation-div {
+    align-items: center;
+    padding: 8em 1em;
+  }
+  .presentation-section .presentation-div p {
+    text-align: center;
+  }
+  .presentation-section .presentation-div h1 {
+    margin: 0.5em 0;
+    text-align: center;
+    font-weight: 400;
+  }
+  .presentation-section .prestation-article .prestation-text-div h2 {
+    margin: 0 0 1em 0;
+  }
   .about-section .about-img-div {
     display: flex;
     justify-content: center;
@@ -720,16 +740,21 @@ footer .footer-bottom-section p {
   .about-section .about-article {
     flex-direction: column;
   }
-  .prestation-section .prestation-article .prestation-text-div h2 {
-    margin: 0 0 1em 0;
-  }
   footer .footer-section {
     flex-direction: column;
     align-items: center;
     row-gap: 2em;
   }
+  footer .footer-contact-div {
+    border-bottom: 1px solid white;
+    width: 60%;
+    padding: 0 0 0.5em 0;
+  }
   footer .pages-div {
     align-items: center;
+    border-bottom: 1px solid white;
+    width: 60%;
+    padding: 0 0 0.5em 0;
   }
   footer .pages-div ul {
     display: flex;
