@@ -531,21 +531,34 @@ footer .footer-bottom-section p {
   flex-direction: column;
   justify-content: center;
 }
+.contact-main .page-contact-section article .contact-div-card {
+  background-color: #2e4a66;
+  width: 100%;
+  padding: 0.5em 0;
+  color: white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3em;
+}
+.contact-main .page-contact-section article .contact-div-card p {
+  text-align: center;
+  margin: 0;
+}
+.contact-main .page-contact-section article .contact-div-card b {
+  color: white;
+  margin-bottom: 0.5em;
+}
 .contact-main .page-contact-section article .phone-contact-div {
   display: flex;
   flex-direction: column;
   width: 22%;
   align-items: center;
-  row-gap: 0.5em;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0.5em;
   border-radius: 1em;
   border: 3px solid #1c6474;
   transition: 500ms ease;
-}
-.contact-main .page-contact-section article .phone-contact-div p {
-  text-align: center;
-  margin: 0;
 }
 .contact-main .page-contact-section article .phone-contact-div:hover {
   background-color: rgb(212, 212, 212);
@@ -556,9 +569,6 @@ footer .footer-bottom-section p {
   border-radius: 1em;
   border: 3px solid #1c6474;
   transition: 500ms ease;
-}
-.contact-main .page-contact-section article .mail-contact-div p {
-  margin: 0;
 }
 .contact-main .page-contact-section article .mail-contact-div:hover {
   background-color: rgb(212, 212, 212);
@@ -578,14 +588,6 @@ footer .footer-bottom-section p {
   border-radius: 1em;
   border: 3px solid #1c6474;
   transition: 500ms ease;
-}
-.contact-main .page-contact-section article .messenger-contact-div p {
-  text-align: center;
-  margin: 0;
-}
-.contact-main .page-contact-section article .messenger-contact-div b {
-  color: black;
-  margin-bottom: 0.5em;
 }
 .contact-main .page-contact-section article .messenger-contact-div:hover {
   background-color: rgb(212, 212, 212);
@@ -658,4 +660,101 @@ footer .footer-bottom-section p {
 .contact-main textarea {
   padding: 1em;
   border-radius: 1em;
+}
+
+@media (max-width: 1024px) {
+  .presentation-section .presentation-div {
+    padding: 10em 1em;
+  }
+  .name-form-div {
+    flex-direction: column;
+  }
+  .about-section {
+    padding: 4em 0;
+  }
+  .about-article {
+    padding: 0 1em;
+  }
+  .about-after-div {
+    display: none;
+  }
+  .realisation-section {
+    padding: 2em 0 0 0;
+  }
+  .realisation-section .realisation-article .realisation-card-div {
+    width: 85%;
+  }
+  .prestation-section .prestation-article {
+    padding: 3em 0;
+  }
+  .prestation-section .prestation-article .prestation-box-div {
+    justify-content: space-around;
+  }
+  .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
+    width: 70%;
+  }
+  .prestation-section::before {
+    background-color: transparent;
+  }
+  .work-together-section {
+    padding: 2em 0;
+  }
+  .work-together-section .work-together-div {
+    padding: 0 1em;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about-img-div {
+    display: flex;
+    justify-content: center;
+  }
+  .about-section .about-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .about-section .about-text-div h2 {
+    text-align: center;
+  }
+  .about-section .about-article {
+    flex-direction: column;
+  }
+  .prestation-section .prestation-article .prestation-text-div h2 {
+    margin: 0 0 1em 0;
+  }
+  footer .footer-section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+  }
+  footer .pages-div {
+    align-items: center;
+  }
+  footer .pages-div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .useful-link-div {
+    align-items: center;
+  }
+  footer .useful-link-div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-together-section {
+    padding: 1em 0 3.5em 0;
+  }
+  .work-together-section .work-together-div h2 {
+    text-align: center;
+    margin: 1em 0 0.2em 0;
+  }
+  .realisation-section h2 {
+    width: 80%;
+  }
+  .realisation-section .realisation-article .realisation-card-div {
+    width: 95%;
+  }
 }/*# sourceMappingURL=styles.css.map */
