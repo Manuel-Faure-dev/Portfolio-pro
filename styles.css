@@ -13,8 +13,8 @@ body li {
 
 .scroll-top-btn {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
+  bottom: 10px;
+  right: 18px;
   border: 2px solid white;
   border-radius: 50%;
   color: white;
@@ -721,8 +721,8 @@ footer .footer-bottom-section p {
     text-align: center;
     font-weight: 400;
   }
-  .presentation-section .prestation-article .prestation-text-div h2 {
-    margin: 0 0 1em 0;
+  .prestation-section .prestation-article {
+    padding: 1em 0;
   }
   .about-section .about-img-div {
     display: flex;
@@ -739,6 +739,19 @@ footer .footer-bottom-section p {
   }
   .about-section .about-article {
     flex-direction: column;
+  }
+  .work-together-section {
+    padding: 1em 0 3.5em 0;
+  }
+  .work-together-section .work-together-div h2 {
+    text-align: center;
+    margin: 1em 0 0.2em 0;
+  }
+  .realisation-section h2 {
+    width: 80%;
+  }
+  .realisation-section .realisation-article .realisation-card-div {
+    width: 95%;
   }
   footer .footer-section {
     flex-direction: column;
@@ -768,18 +781,5 @@ footer .footer-bottom-section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .work-together-section {
-    padding: 1em 0 3.5em 0;
-  }
-  .work-together-section .work-together-div h2 {
-    text-align: center;
-    margin: 1em 0 0.2em 0;
-  }
-  .realisation-section h2 {
-    width: 80%;
-  }
-  .realisation-section .realisation-article .realisation-card-div {
-    width: 95%;
   }
 }/*# sourceMappingURL=styles.css.map */

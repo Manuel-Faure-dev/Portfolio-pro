@@ -16,8 +16,8 @@ body {
 // Icone Chevron up
 .scroll-top-btn {
     position: fixed;
-    bottom: 1em;
-    right: 1em;
+    bottom: 10px;
+    right: 18px;
     border: 2px solid white;
     border-radius: 50%;
     color: white;
@@ -767,8 +767,10 @@ footer {
                 font-weight: 400;
             }
         }
-        .prestation-article .prestation-text-div h2 {
-            margin: 0 0 1em 0;
+    }
+    .prestation-section {
+        .prestation-article {
+            padding: 1em 0;
         }
     }
     .about-section {
@@ -787,6 +789,23 @@ footer {
         }
         .about-article {
             flex-direction: column;
+        }
+    }
+    .work-together-section {
+        padding: 1em 0 3.5em 0;
+        .work-together-div {
+            h2 {
+                text-align: center;
+                margin: 1em 0 0.2em 0;
+            }
+        }
+    }
+    .realisation-section {
+        h2 {
+            width: 80%;
+        }
+        .realisation-article .realisation-card-div {
+            width: 95%;
         }
     }
     footer {
@@ -818,23 +837,6 @@ footer {
                 flex-direction: column;
                 align-items: center;
             }
-        }
-    }
-    .work-together-section {
-        padding: 1em 0 3.5em 0;
-        .work-together-div {
-            h2 {
-                text-align: center;
-                margin: 1em 0 0.2em 0;
-            }
-        }
-    }
-    .realisation-section {
-        h2 {
-            width: 80%;
-        }
-        .realisation-article .realisation-card-div {
-            width: 95%;
         }
     }
 }
