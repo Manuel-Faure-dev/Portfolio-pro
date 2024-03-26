@@ -519,7 +519,7 @@ footer {
 
 .contact-footer-bottom-section {
     padding: 1.5em 0;
-    background-color: #111e2b;
+    background-color: #2e4a66;
     p {
         text-align: center;
     }
@@ -691,7 +691,8 @@ footer {
         border-radius: 1em;
     }
 }
-//Resposive
+
+//Responsive
 
 @media (max-width: 1024px) {
     .presentation-section {
@@ -738,6 +739,13 @@ footer {
         padding: 2em 0;
         .work-together-div {
             padding: 0 1em;
+        }
+    }
+
+    //Page Contact
+    .contact-main {
+        .contact-form {
+            width: 70%;
         }
     }
 }
@@ -816,7 +824,7 @@ footer {
         }
         .footer-contact-div {
             border-bottom: 1px solid white;
-            width: 60%;
+            width: 80%;
             padding: 0 0 0.5em 0;
         }
         .pages-div {
@@ -837,6 +845,30 @@ footer {
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+
+    //Page Contact
+    .contact-main {
+        .page-contact-section {
+            article {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 1.5em;
+                .phone-contact-div {
+                    width: 80%;
+                }
+                .mail-contact-div {
+                    width: 80%;
+                }
+                .messenger-contact-div {
+                    width: 80%;
+                }
+            }
+        }
+        .contact-form {
+            width: 90%;
+            padding: 3em 1em 5em 1em;
         }
     }
 }

@@ -494,7 +494,7 @@ footer .footer-bottom-section p {
 
 .contact-footer-bottom-section {
   padding: 1.5em 0;
-  background-color: #111e2b;
+  background-color: #2e4a66;
 }
 .contact-footer-bottom-section p {
   text-align: center;
@@ -702,6 +702,9 @@ footer .footer-bottom-section p {
   .work-together-section .work-together-div {
     padding: 0 1em;
   }
+  .contact-main .contact-form {
+    width: 70%;
+  }
 }
 @media (max-width: 768px) {
   header nav ul li:nth-child(2),
@@ -760,7 +763,7 @@ footer .footer-bottom-section p {
   }
   footer .footer-contact-div {
     border-bottom: 1px solid white;
-    width: 60%;
+    width: 80%;
     padding: 0 0 0.5em 0;
   }
   footer .pages-div {
@@ -781,5 +784,23 @@ footer .footer-bottom-section p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact-main .page-contact-section article {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5em;
+  }
+  .contact-main .page-contact-section article .phone-contact-div {
+    width: 80%;
+  }
+  .contact-main .page-contact-section article .mail-contact-div {
+    width: 80%;
+  }
+  .contact-main .page-contact-section article .messenger-contact-div {
+    width: 80%;
+  }
+  .contact-main .contact-form {
+    width: 90%;
+    padding: 3em 1em 5em 1em;
   }
 }/*# sourceMappingURL=styles.css.map */
