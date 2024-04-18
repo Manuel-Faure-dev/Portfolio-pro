@@ -170,14 +170,19 @@ header {
     background-color: #f6d2b8;
     color: #2e4a66;
     position: relative;
+
+    display: flex;
+
+    padding-inline: 100px;
+    padding-block: 100px;
     .about-after-div {
         content: ' ';
         background-color: #e5975f;
         width: 374px;
         height: 329px;
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 7%;
+        left: 7%;
         z-index: 1;
     }
     .about-article {
@@ -220,7 +225,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 4em 0 7em 0;
+    padding: 5em 0 7em 0;
     h2 {
         font-size: 2.3em;
         margin-bottom: 1.4em;
@@ -234,16 +239,17 @@ header {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         column-gap: 3em;
-        row-gap: 3em;
-        //background-color: #1c6474;
+        row-gap: 4em;
         padding: 3em 0;
         //background: linear-gradient(#a8d5d8, white, pink, white, #1c6474);
-        background: #1c6474;
+        //background: #1c6474;
+        background: white;
 
         .realisation-card-div {
             position: relative;
+            box-shadow: 2px 3px 8px black;
             //border: 1px solid #2e4a66;
             width: 43%;
             img {
@@ -266,7 +272,7 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: 500ms ease-in-out;
+            transition: 700ms ease-in-out;
             h4 {
                 font-size: 1.5em;
                 margin: 0;
@@ -629,7 +635,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 45em;
         color: white;
         row-gap: 1.4em;
         padding: 4em 1em 5em 1em;
