@@ -495,7 +495,7 @@ footer .useful-link-div ul li img {
 }
 footer .footer-bottom-section {
   padding: 1.5em 0;
-  background-color: #2e4a66;
+  background-color: #324150;
 }
 footer .footer-bottom-section p {
   text-align: center;
@@ -503,7 +503,7 @@ footer .footer-bottom-section p {
 
 .contact-footer-bottom-section {
   padding: 1.5em 0;
-  background-color: #2e4a66;
+  background-color: #324150;
 }
 .contact-footer-bottom-section p {
   text-align: center;
@@ -665,6 +665,8 @@ footer .footer-bottom-section p {
 }
 .contact-main label {
   padding-bottom: 0.2em;
+  font-size: 1.1em;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 .contact-main textarea {
   padding: 1em;
