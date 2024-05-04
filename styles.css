@@ -161,22 +161,12 @@ header nav li:nth-child(6):hover {
 
 .about-section {
   padding: 6em 0;
-  background-color: #f6d2b8;
+  background-color: #ffdab9;
   color: #2e4a66;
   position: relative;
   display: flex;
   padding-inline: 100px;
   padding-block: 100px;
-}
-.about-section .about-after-div {
-  content: " ";
-  background-color: #e5975f;
-  width: 374px;
-  height: 329px;
-  position: absolute;
-  bottom: 7%;
-  left: 7%;
-  z-index: 1;
 }
 .about-section .about-article {
   display: flex;
@@ -229,14 +219,15 @@ header nav li:nth-child(6):hover {
   justify-content: space-around;
   -moz-column-gap: 3em;
        column-gap: 3em;
-  row-gap: 4em;
+  row-gap: 5em;
   padding: 3em 0;
   background: white;
 }
 .realisation-section .realisation-article .realisation-card-div {
   position: relative;
   box-shadow: 2px 3px 8px black;
-  width: 43%;
+  width: 47%;
+  cursor: pointer;
 }
 .realisation-section .realisation-article .realisation-card-div img {
   -o-object-fit: cover;
