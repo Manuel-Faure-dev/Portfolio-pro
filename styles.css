@@ -250,15 +250,15 @@ header nav li:nth-child(6):hover {
   justify-content: center;
   transition: 700ms ease-in-out;
 }
-.realisation-section .realisation-article .after-card-div h4 {
-  font-size: 1.5em;
-  margin: 0;
-  font-weight: 500;
-}
 .realisation-section .realisation-article .after-card-div p {
   font-size: 1.1em;
   text-align: center;
   padding: 0 1em;
+}
+.realisation-section .realisation-article .after-card-div .title-project {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 500;
 }
 .realisation-section .realisation-article .after-card-div a {
   color: #2e4a66;
@@ -268,9 +268,10 @@ header nav li:nth-child(6):hover {
   transition: all 500ms ease-in-out;
   margin-top: 1.2em;
   font-weight: 500;
+  border: 3px double white;
 }
 .realisation-section .realisation-article .after-card-div a:hover {
-  background-color: #1c6474;
+  background-color: #274158;
   color: white;
 }
 .realisation-section .realisation-article .after-card-div:hover {
@@ -410,6 +411,7 @@ footer .footer-contact-div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 footer img {
   max-width: 10em;
@@ -439,7 +441,7 @@ footer .pages-div {
   flex-direction: column;
   align-items: flex-start;
 }
-footer .pages-div h5 {
+footer .pages-div h4 {
   font-size: 1.5em;
   margin: 0 0 0.5em 0;
 }
@@ -464,7 +466,7 @@ footer .useful-link-div {
   flex-direction: column;
   align-items: flex-start;
 }
-footer .useful-link-div h5 {
+footer .useful-link-div h4 {
   font-size: 1.4em;
   margin: 0 0 0.5em 0;
 }
@@ -501,7 +503,7 @@ footer .footer-bottom-section p {
 }
 
 .contact-main {
-  background-color: rgba(68, 114, 158, 0.48);
+  background-color: #b2b3bd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -561,7 +563,7 @@ footer .footer-bottom-section p {
   transition: 500ms ease;
 }
 .contact-main .page-contact-section article .phone-contact-div:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: #dbecfb;
 }
 .contact-main .page-contact-section article .mail-contact-div {
   width: 22%;
@@ -571,7 +573,7 @@ footer .footer-bottom-section p {
   transition: 500ms ease;
 }
 .contact-main .page-contact-section article .mail-contact-div:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: #dbecfb;
 }
 .contact-main .page-contact-section article .messenger-contact-link {
   display: flex;
@@ -590,7 +592,7 @@ footer .footer-bottom-section p {
   transition: 500ms ease;
 }
 .contact-main .page-contact-section article .messenger-contact-div:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: #dbecfb;
 }
 .contact-main .page-contact-section article img {
   max-width: 5em;
@@ -613,7 +615,9 @@ footer .footer-bottom-section p {
   font-size: 1.1em;
   border-radius: 0.6em;
   position: relative;
-  overflow: hidden; /* Assure que le pseudo-élément dépasse du bouton */
+  overflow: hidden;
+  border: none;
+  box-shadow: 2px 2px 5px #2e4a66;
 }
 .contact-main .contact-form button:hover {
   color: white;
@@ -634,7 +638,7 @@ footer .footer-bottom-section p {
 }
 .contact-main .contact-form button span {
   position: relative;
-  z-index: 3; /* Mettre le texte au-dessus de l'élément remplissant */
+  z-index: 3;
 }
 .contact-main .name-form-div {
   display: flex;
@@ -653,6 +657,7 @@ footer .footer-bottom-section p {
 .contact-main input {
   padding: 1.2em;
   border-radius: 1em;
+  box-shadow: 2px 2px 5px #2e4a66;
 }
 .contact-main label {
   padding-bottom: 0.2em;
@@ -662,6 +667,7 @@ footer .footer-bottom-section p {
 .contact-main textarea {
   padding: 1em;
   border-radius: 1em;
+  box-shadow: 2px 2px 5px #2e4a66;
 }
 
 @media (max-width: 1024px) {
@@ -709,6 +715,9 @@ footer .footer-bottom-section p {
   }
 }
 @media (max-width: 768px) {
+  header nav .header-div img {
+    max-width: 5em;
+  }
   header nav ul li:nth-child(2),
   header nav ul li:nth-child(3),
   header nav ul li:nth-child(4) {
