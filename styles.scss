@@ -26,7 +26,6 @@ body {
     background-color: transparent;
     cursor: pointer;
     z-index: 2;
-    //background-color: #2e4a66;
     transition: 500ms ease-in-out;
     text-shadow: 1px 1px 3px black;
     box-shadow: 1px 1px 3px black;
@@ -100,7 +99,7 @@ header {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/Le-massif-du-Vercors-star-des-plateaux-cinema.webp');
+    background-image: url('./assets/background-vercors.webp');
     height: 100vh;
     z-index: 1;
     .presentation-div {
