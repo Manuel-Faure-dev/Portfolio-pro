@@ -1,9 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gotu&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
-body {
-  font-family: "IBM Plex Sans", sans-serif;
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 body a {
   text-decoration: none;
@@ -16,7 +20,7 @@ body li {
   position: fixed;
   bottom: 10px;
   right: 18px;
-  border: 2px solid white;
+  border: 3px solid #cabb9a;
   border-radius: 50%;
   color: white;
   font-size: 2em;
@@ -26,22 +30,19 @@ body li {
   cursor: pointer;
   z-index: 2;
   transition: 500ms ease-in-out;
-  text-shadow: 1px 1px 3px black;
-  box-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
 }
 
 .scroll-top-btn:hover {
   transform: rotate(360deg);
+  box-shadow: none;
 }
 
 .container {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-}
-
-#header {
-  background-color: rgba(135, 191, 252, 0.8);
 }
 
 header {
@@ -56,9 +57,11 @@ header .header-div {
   display: flex;
 }
 header .header-div img {
-  max-width: 8em;
+  max-width: 6em;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: opacity(90%);
 }
 header nav {
   display: flex;
@@ -67,10 +70,10 @@ header nav {
 }
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0;
-  width: 100%;
+  width: 55%;
 }
 header nav a {
   color: white;
@@ -100,7 +103,7 @@ header nav li:nth-child(6):hover {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./assets/background-vercors.webp");
+  background-image: url("../assets/background-vercors.webp");
   height: 100vh;
   z-index: 1;
 }
@@ -161,8 +164,8 @@ header nav li:nth-child(6):hover {
 
 .about-section {
   padding: 6em 0;
-  background-color: #ffdab9;
-  color: #2e4a66;
+  background-color: #eee4cd;
+  color: #203343;
   position: relative;
   display: flex;
   padding-inline: 100px;
@@ -194,11 +197,11 @@ header nav li:nth-child(6):hover {
   font-size: 1.1em;
 }
 .about-section .about-text-div p {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .realisation-section {
-  color: #2e4a66;
+  color: #203343;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -414,7 +417,7 @@ footer .footer-contact-div {
   justify-content: center;
 }
 footer img {
-  max-width: 10em;
+  max-width: 6em;
 }
 footer a {
   color: white;
@@ -487,11 +490,13 @@ footer .useful-link-div ul li img {
   color: white;
 }
 footer .footer-bottom-section {
-  padding: 1.5em 0;
+  padding: 1em 0;
   background-color: #324150;
 }
 footer .footer-bottom-section p {
   text-align: center;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 .contact-footer-bottom-section {
@@ -500,174 +505,6 @@ footer .footer-bottom-section p {
 }
 .contact-footer-bottom-section p {
   text-align: center;
-}
-
-.contact-main {
-  background-color: #b2b3bd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-main .page-contact-section {
-  padding: 5em 0 3em 0;
-  width: 100%;
-}
-.contact-main .page-contact-section h1 {
-  font-size: 2.5em;
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid #2e4a66;
-  background: #2e4a66;
-  padding: 1em 0;
-}
-.contact-main .page-contact-section article {
-  display: flex;
-  justify-content: space-around;
-  background: white;
-  padding: 5em 0;
-  border-radius: 1em;
-}
-.contact-main .page-contact-section article span {
-  height: 8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact-main .page-contact-section article .contact-div-card {
-  background-color: #2e4a66;
-  width: 100%;
-  padding: 0.5em 0;
-  color: white;
-  border-radius: 0.5em;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.3em;
-}
-.contact-main .page-contact-section article .contact-div-card p {
-  text-align: center;
-  margin: 0;
-}
-.contact-main .page-contact-section article .contact-div-card b {
-  color: white;
-  margin-bottom: 0.5em;
-}
-.contact-main .page-contact-section article .phone-contact-div {
-  display: flex;
-  flex-direction: column;
-  width: 22%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5em;
-  border-radius: 1em;
-  border: 3px solid #1c6474;
-  transition: 500ms ease;
-}
-.contact-main .page-contact-section article .phone-contact-div:hover {
-  background-color: #dbecfb;
-}
-.contact-main .page-contact-section article .mail-contact-div {
-  width: 22%;
-  padding: 0.5em;
-  border-radius: 1em;
-  border: 3px solid #1c6474;
-  transition: 500ms ease;
-}
-.contact-main .page-contact-section article .mail-contact-div:hover {
-  background-color: #dbecfb;
-}
-.contact-main .page-contact-section article .messenger-contact-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color: black;
-  row-gap: 0.5em;
-}
-.contact-main .page-contact-section article .messenger-contact-div {
-  width: 22%;
-  padding: 0.5em;
-  border-radius: 1em;
-  border: 3px solid #1c6474;
-  transition: 500ms ease;
-}
-.contact-main .page-contact-section article .messenger-contact-div:hover {
-  background-color: #dbecfb;
-}
-.contact-main .page-contact-section article img {
-  max-width: 5em;
-}
-.contact-main .page-contact-section article .fa-envelope {
-  font-size: 5em;
-}
-.contact-main .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45em;
-  color: white;
-  row-gap: 1.4em;
-  padding: 4em 1em 5em 1em;
-}
-.contact-main .contact-form button {
-  z-index: 2;
-  padding: 0.5em 3em;
-  font-size: 1.1em;
-  border-radius: 0.6em;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  box-shadow: 2px 2px 5px #2e4a66;
-}
-.contact-main .contact-form button:hover {
-  color: white;
-}
-.contact-main .contact-form button::before {
-  content: ""; /* Pseudo-élément avant pour l'animation */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0; /* Largeur initiale de l'élément */
-  height: 100%;
-  background-color: #1c6474;
-  transition: width 400ms ease-out;
-  z-index: -1;
-}
-.contact-main .contact-form button:hover::before {
-  width: 100%;
-}
-.contact-main .contact-form button span {
-  position: relative;
-  z-index: 3;
-}
-.contact-main .name-form-div {
-  display: flex;
-  width: 100%;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
-}
-.contact-main .lastname-div,
-.contact-main .firstname-div,
-.contact-main .email-div,
-.contact-main .textarea-div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.contact-main input {
-  padding: 1.2em;
-  border-radius: 1em;
-  box-shadow: 2px 2px 5px #2e4a66;
-}
-.contact-main label {
-  padding-bottom: 0.2em;
-  font-size: 1.1em;
-  text-shadow: 1px 2px 2px rgb(0, 0, 0);
-}
-.contact-main textarea {
-  padding: 1em;
-  border-radius: 1em;
-  box-shadow: 2px 2px 5px #2e4a66;
 }
 
 @media (max-width: 1024px) {
@@ -710,9 +547,6 @@ footer .footer-bottom-section p {
   .work-together-section .work-together-div {
     padding: 0 1em;
   }
-  .contact-main .contact-form {
-    width: 70%;
-  }
 }
 @media (max-width: 768px) {
   header nav .header-div img {
@@ -723,36 +557,45 @@ footer .footer-bottom-section p {
   header nav ul li:nth-child(4) {
     display: none;
   }
-  .presentation-section .presentation-div {
-    align-items: center;
-    padding: 8em 1em;
-  }
-  .presentation-section .presentation-div p {
-    text-align: center;
-  }
-  .presentation-section .presentation-div h1 {
-    margin: 0.5em 0;
-    text-align: center;
-    font-weight: 400;
-  }
   .prestation-section .prestation-article {
-    padding: 1em 0;
+    padding: 2em 0 0.1em 0;
+  }
+  .prestation-section .prestation-article .prestation-text-div h2 {
+    margin: 0.2em 0 1em 0;
+  }
+  .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
+    width: 95%;
+    padding: 1.5em;
+  }
+  .prestation-section .prestation-article .prestation-box-div .prestation-card-div p {
+    margin-top: 1em;
+  }
+  .prestation-section .prestation-article .prestation-contact-div {
+    margin: 3em 0;
+  }
+  .about-section {
+    padding: 2em 0;
   }
   .about-section .about-img-div {
     display: flex;
     justify-content: center;
   }
+  .about-section .about-img-div .about-img {
+    width: 98%;
+  }
   .about-section .about-text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
+    padding: 1.2em 0.4em;
   }
   .about-section .about-text-div h2 {
     text-align: center;
+    margin: 0.1em 0 0.7em 0;
   }
   .about-section .about-article {
     flex-direction: column;
+    padding: 0.1em 0;
   }
   .work-together-section {
     padding: 1em 0 3.5em 0;
@@ -761,8 +604,18 @@ footer .footer-bottom-section p {
     text-align: center;
     margin: 1em 0 0.2em 0;
   }
+  .work-together-section .work-together-div .work-contact-link {
+    margin: 1.5em 0 0.2em 0;
+  }
+  .realisation-section {
+    padding: 4em 0;
+  }
   .realisation-section h2 {
     width: 80%;
+  }
+  .realisation-section .realisation-article {
+    padding: 0;
+    row-gap: 2em;
   }
   .realisation-section .realisation-article .realisation-card-div {
     width: 95%;
@@ -786,7 +639,7 @@ footer .footer-bottom-section p {
   footer .pages-div ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   footer .useful-link-div {
     align-items: center;
@@ -794,24 +647,19 @@ footer .footer-bottom-section p {
   footer .useful-link-div ul {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .scroll-top-btn {
+    width: 1em;
+    height: 1em;
+    bottom: 20px;
+  }
+  .fa-chevron-up {
+    font-size: 0.6em;
+  }
+  .fa-chevron-up-span {
+    display: flex;
     align-items: center;
-  }
-  .contact-main .page-contact-section article {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.5em;
-  }
-  .contact-main .page-contact-section article .phone-contact-div {
-    width: 80%;
-  }
-  .contact-main .page-contact-section article .mail-contact-div {
-    width: 80%;
-  }
-  .contact-main .page-contact-section article .messenger-contact-div {
-    width: 80%;
-  }
-  .contact-main .contact-form {
-    width: 90%;
-    padding: 3em 1em 5em 1em;
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */
