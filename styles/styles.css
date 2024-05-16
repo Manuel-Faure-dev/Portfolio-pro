@@ -57,16 +57,42 @@ header .header-div {
   display: flex;
 }
 header .header-div img {
-  max-width: 6em;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: opacity(90%);
+  width: 6em;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header nav .dropdown-div {
+  display: none;
+}
+header nav .dropdown-div span {
+  display: none;
+  transition: all 700ms ease-in-out;
+}
+header nav .dropdown-div span .fa-bars {
+  font-size: 2.5em;
+  color: #cabb9a;
+}
+header nav .dropdown-div span:active + ul {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+header nav .dropdown-div ul {
+  position: absolute;
+  top: 3.8em;
+  right: 0;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  row-gap: 1em;
+  text-transform: uppercase;
+  transition: all 500ms ease-in-out;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
 }
 header nav ul {
   display: flex;
@@ -111,15 +137,14 @@ header nav li:nth-child(6):hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10em 0;
+  padding: 14em 0;
 }
 .presentation-section .presentation-div h1 {
   font-size: 2.5em;
-  margin-top: 0;
   text-shadow: 1px 1px 10px rgb(56, 56, 56);
 }
 .presentation-section .presentation-div p {
-  margin-bottom: 3em;
+  margin: 1.2em 0 3.5em 0;
   font-size: 1.4em;
   text-shadow: 1px 1px 5px rgb(25, 25, 25);
 }
@@ -175,19 +200,18 @@ header nav li:nth-child(6):hover {
   display: flex;
   align-items: center;
 }
-.about-section .about-img-div {
-  flex: 1;
-  z-index: 1;
-}
 .about-section .about-img-div .about-img {
-  width: 90%;
-  height: auto;
+  width: 330px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: white;
+  border-radius: 8px;
 }
 .about-section .about-text-div {
-  flex: 2;
-  padding: 0 3em 0 0;
+  padding: 0 0 0 2em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2em;
 }
 .about-section .about-text-div h2 {
   font-size: 2.3em;
@@ -197,7 +221,8 @@ header nav li:nth-child(6):hover {
   font-size: 1.1em;
 }
 .about-section .about-text-div p {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
 
 .realisation-section {
@@ -289,12 +314,10 @@ header nav li:nth-child(6):hover {
 .prestation-section .prestation-article {
   padding: 4em 0;
 }
-.prestation-section .prestation-article .prestation-text-div {
-  margin-top: 1em;
-}
 .prestation-section .prestation-article .prestation-text-div h2 {
   text-align: center;
   font-size: 2.3em;
+  margin: 0 0 1.2em 0;
 }
 .prestation-section .prestation-article .prestation-text-div p {
   text-align: center;
@@ -310,8 +333,8 @@ header nav li:nth-child(6):hover {
   margin-top: 3em;
 }
 .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
-  width: 25%;
-  padding: 0 1em;
+  width: 30%;
+  padding: 1em;
   border-radius: 1em;
   background-color: white;
   z-index: 1;
@@ -327,6 +350,7 @@ header nav li:nth-child(6):hover {
 .prestation-section .prestation-article .prestation-box-div .prestation-card-div p {
   text-align: center;
   font-size: 1em;
+  margin-top: 1em;
 }
 .prestation-section .prestation-article .prestation-contact-div {
   margin-top: 2.5em;
@@ -366,6 +390,7 @@ header nav li:nth-child(6):hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  row-gap: 1.5em;
 }
 .work-together-section .work-together-div h2 {
   font-size: 2.3em;
@@ -549,13 +574,26 @@ footer .footer-bottom-section p {
   }
 }
 @media (max-width: 768px) {
+  header nav {
+    justify-content: space-evenly;
+  }
   header nav .header-div img {
     max-width: 5em;
   }
-  header nav ul li:nth-child(2),
-  header nav ul li:nth-child(3),
-  header nav ul li:nth-child(4) {
+  header nav .nav-item {
     display: none;
+  }
+  header nav .dropdown-div {
+    display: block;
+  }
+  header nav .dropdown-div span {
+    display: block;
+  }
+  .presentation-section .presentation-div {
+    padding: 9em 1em;
+  }
+  .presentation-section .presentation-div p {
+    margin: 1.5em 0 4em 0;
   }
   .prestation-section .prestation-article {
     padding: 2em 0 0.1em 0;
