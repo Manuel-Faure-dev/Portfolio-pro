@@ -34,3 +34,37 @@ $('.dropdown-ul a').on('click', function () {
     $('.toggle-menu-span').show()
     //console.log('toggle menu', toggleMenu)
 })
+
+// Gestion de la NavBar disparaît / apparaît au mouvement / au click navbBar-link
+
+var prevScrollpos = scrollY
+window.onscroll = function () {
+    var currentScrollPos = scrollY
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById('header').style.top = '0'
+    } else {
+        document.getElementById('header').style.top = '-82px'
+    }
+    prevScrollpos = currentScrollPos
+}
+
+// Ajoute une hauteur de 5em au click link navBar
+const navBarLinks = document.querySelectorAll('.nav-item')
+
+navBarLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        //event.preventDefault() // Empêcher le comportement de clic par défaut
+
+        const targetId = link.getAttribute('href').substring(1) // Récupérer l'identifiant de l'ancre
+        const targetElement = document.getElementById(targetId) // Récupérer l'élément cible
+
+        if (targetElement) {
+            const offset =
+                5 *
+                parseFloat(getComputedStyle(document.documentElement).fontSize) // Calculer le décalage en pixels
+            const offsetTop =
+                targetElement.getBoundingClientRect().top + scrollY - offset
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' }) // Faire défiler la fenêtre jusqu'à l'ancre avec un décalage de 5em
+        }
+    })
+})
