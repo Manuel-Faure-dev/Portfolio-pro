@@ -351,6 +351,17 @@ button:hover {
   background: #a7e9a7;
 }
 
+@media screen and (max-width: 1024px) {
+  header nav {
+    padding: 0 0.5em;
+  }
+  header nav ul {
+    width: 70%;
+  }
+  form {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     padding: 0;

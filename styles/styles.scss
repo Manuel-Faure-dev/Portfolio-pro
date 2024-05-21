@@ -227,7 +227,9 @@ header {
         border-radius: 0.2em;
         display: flex;
         .about-img {
-            width: 17em;
+            //max-width: 22em;
+            height: auto;
+            width: 22em;
             border-radius: 0.2em;
         }
     }
@@ -246,7 +248,7 @@ header {
         }
         p {
             font-size: 1.2em;
-            line-height: 1.6em;
+            line-height: 1.7em;
         }
     }
 }
@@ -281,6 +283,7 @@ header {
                 font-size: 1.1em;
                 line-height: 1em;
                 font-weight: 500;
+                padding: 0 1em;
             }
         }
         .prestation-box-div {
@@ -296,7 +299,7 @@ header {
 
             .prestation-card-div {
                 width: 30%;
-                padding: 1em;
+                padding: 1em 1em 2em 1em;
                 border-radius: 1em;
                 background-color: #eff0f1;
                 z-index: 1;
@@ -643,6 +646,13 @@ footer {
 //Responsive
 
 @media (max-width: 1024px) {
+    header nav {
+        padding: 0 0.5em;
+        ul {
+            width: 70%;
+        }
+    }
+
     .presentation-section {
         .presentation-div {
             padding: 10em 1em;
@@ -653,7 +663,11 @@ footer {
         flex-direction: column;
     }
     .about-section {
-        padding: 4em 0;
+        padding: 2em 0;
+        height: auto;
+        .about-img-div {
+            display: none;
+        }
     }
     .about-article {
         padding: 0 1em;

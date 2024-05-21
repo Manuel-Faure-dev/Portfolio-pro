@@ -339,6 +339,18 @@ button:hover {
 
 // Responsive
 
+@media screen and (max-width: 1024px) {
+    header nav {
+        padding: 0 0.5em;
+        ul {
+            width: 70%;
+        }
+    }
+    form {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding: 0;
