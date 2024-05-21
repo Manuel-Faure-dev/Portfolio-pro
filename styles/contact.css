@@ -355,6 +355,9 @@ button:hover {
   body {
     padding: 0;
   }
+  body main {
+    padding: 8em 0 4em 0;
+  }
   body .container {
     row-gap: 1.5em;
   }
@@ -402,5 +405,8 @@ button:hover {
   .form-inner input,
   .form-inner textarea {
     border-radius: 10px;
+  }
+  .form-inner textarea {
+    height: 15em;
   }
 }/*# sourceMappingURL=contact.css.map */

@@ -342,6 +342,9 @@ button:hover {
 @media screen and (max-width: 768px) {
     body {
         padding: 0;
+        main {
+            padding: 8em 0 4em 0;
+        }
         .container {
             row-gap: 1.5em;
         }
@@ -394,6 +397,9 @@ button:hover {
         input,
         textarea {
             border-radius: 10px;
+        }
+        textarea {
+            height: 15em;
         }
     }
 }
