@@ -68,3 +68,13 @@ navBarLinks.forEach((link) => {
         }
     })
 })
+
+// Gestion du submit contact form / reset du form au chargement de la page
+const contactForm = document.querySelector('.decor')
+
+window.addEventListener('load', () => {
+    const inputs = contactForm.querySelectorAll(
+        'input[type="text"], input[type="email"], textarea'
+    )
+    inputs.forEach((input) => (input.value = ''))
+})

@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="./styles/contact.css" />
     </head>
     <body>
-        <header>
-            <nav class="container">
+        <header id="header">
+            <nav class="container-width">
                 <div class="header-div">
                     <a href="./index.html"
                         ><img
-                            src="./assets/logo/logo.svg"
+                            src="./assets/logo/logo-svg.webp"
                             alt="logo MFD"
                             class="logo-img"
                     /></a>
@@ -73,15 +73,52 @@
             </nav>
         </header>
         <main>
-            <h1>Pour me contacter</h1>
-            <section class="contact-me-section">
-                <div class="contact-me-div">
-                    <p>Par mail</p>
-                    <p>Par téléphone</p>
-                    <p>Par Messenger</p>
-                    <p>Via le formulaire de contact ci dessous</p>
+            <h2>Pour me contacter</h2>
+            <article class="contact-me-article">
+                <div class="container">
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>&#9990;</h2>
+                                <h3>Par Téléphone</h3>
+                                <p>au 06.36.09.68.86</p>
+                                <a href="tel:0636096886">M'appeler</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>&#9993;</h2>
+                                <h3>Par E-mail</h3>
+                                <p>manuel.faure.dev@gmail.com</p>
+                                <a href="mailto:manuel.faure.dev@gmail.com"
+                                    >M'envoyer un mail</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>
+                                    <i
+                                        class="fa-brands fa-facebook-messenger"
+                                    ></i>
+                                </h2>
+                                <h3>Par messenger</h3>
+                                <p>Manuel Faure Développement</p>
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61557347800254"
+                                    >M'envoyer un message</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </article>
+            <p class="text-p">Ou via le formulaire de contact</p>
             <form
                 class="decor"
                 action="https://formspree.io/f/mjvneepj"
@@ -91,18 +128,42 @@
                 <div class="form-right-decoration"></div>
                 <div class="circle"></div>
                 <div class="form-inner">
-                    <input type="text" placeholder="Saisissez votre nom" />
-                    <input type="email" placeholder="Saisissez votre Email" />
+                    <label for="name"></label>
+                    <input
+                        required
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Saisissez votre nom"
+                    />
+                    <label for="email"></label>
+                    <input
+                        required
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Saisissez votre Email"
+                    />
+                    <label for="message"></label>
                     <textarea
+                        required
+                        id="message"
+                        name="message"
                         placeholder="Votre message..."
                         rows="5"
                     ></textarea>
-                    <button type="submit" href="/">Envoyer</button>
+                    <button
+                        type="submit"
+                        id="submit-form"
+                        name="submit"
+                        href="/"
+                    >
+                        Envoyer
+                    </button>
                 </div>
             </form>
         </main>
     </body>
-
     <script
         src="https://kit.fontawesome.com/8ad4ebeb56.js"
         crossorigin="anonymous"
