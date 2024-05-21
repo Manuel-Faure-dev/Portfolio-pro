@@ -698,6 +698,7 @@ footer .footer-bottom-section p {
   }
   .about-section .box-img-div {
     padding: 1em 1em;
+    margin: 0 0.2em;
     flex-direction: column;
   }
   .about-section .about-img-div {
