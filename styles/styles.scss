@@ -50,7 +50,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    top: 0;
+    //top: 0;
     background-color: rgb(44, 69, 91, 0.8);
     padding: 0.2em 0;
     z-index: 2;
@@ -82,7 +82,7 @@ header {
             }
             ul {
                 position: absolute;
-                top: 3.8em;
+                top: 3.2em;
                 right: 0;
                 font-size: 1em;
                 display: flex;
@@ -345,7 +345,7 @@ header {
     width: 100%;
     background-color: #1d6474;
     position: absolute;
-    content: '::before content';
+    content: '';
 }
 
 // Section Réalisation galerie
@@ -727,13 +727,19 @@ footer {
             padding: 2em 0 0.1em 0;
             .prestation-text-div {
                 h2 {
-                    margin: 0.2em 0 1em 0;
+                    margin: 1.8em 0 1.5em 0;
+                    padding: 0.2em 0.5em;
+                }
+                p {
+                    padding: 0.2em;
                 }
             }
             .prestation-box-div {
+                row-gap: 1.5em;
+                margin-top: 3em;
                 .prestation-card-div {
                     width: 95%;
-                    padding: 1.5em;
+                    padding: 0.7em;
                     p {
                         margin-top: 1em;
                     }
@@ -745,7 +751,12 @@ footer {
         }
     }
     .about-section {
-        padding: 2em 0;
+        padding: 0;
+        height: auto;
+        .box-img-div {
+            padding: 1em 1em;
+            flex-direction: column;
+        }
         .about-img-div {
             display: flex;
             justify-content: center;
@@ -760,7 +771,7 @@ footer {
             padding: 1.2em 0.4em;
             h2 {
                 text-align: center;
-                margin: 0.1em 0 0.7em 0;
+                margin: 0.7em 0 0.7em 0;
             }
         }
         .about-article {
@@ -783,8 +794,8 @@ footer {
     .realisation-section {
         padding: 4em 0;
         h2 {
-            width: 80%;
-            //8margin: 1.5em 0;
+            margin: 0.5em 0 1.8em 0;
+            padding: 0.2em 0.5em;
         }
         .realisation-article {
             padding: 0;

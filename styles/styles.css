@@ -48,7 +48,6 @@ body li {
 header {
   position: fixed;
   width: 100%;
-  top: 0;
   background-color: rgba(44, 69, 91, 0.8);
   padding: 0.2em 0;
   z-index: 2;
@@ -83,7 +82,7 @@ header nav .dropdown-div span:active + ul {
 }
 header nav .dropdown-div ul {
   position: absolute;
-  top: 3.8em;
+  top: 3.2em;
   right: 0;
   font-size: 1em;
   display: flex;
@@ -332,7 +331,7 @@ header nav li:nth-child(6):hover {
   width: 100%;
   background-color: #1d6474;
   position: absolute;
-  content: "::before content";
+  content: "";
 }
 
 .realisation-section {
@@ -673,11 +672,19 @@ footer .footer-bottom-section p {
     padding: 2em 0 0.1em 0;
   }
   .prestation-section .prestation-article .prestation-text-div h2 {
-    margin: 0.2em 0 1em 0;
+    margin: 1.8em 0 1.5em 0;
+    padding: 0.2em 0.5em;
+  }
+  .prestation-section .prestation-article .prestation-text-div p {
+    padding: 0.2em;
+  }
+  .prestation-section .prestation-article .prestation-box-div {
+    row-gap: 1.5em;
+    margin-top: 3em;
   }
   .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
     width: 95%;
-    padding: 1.5em;
+    padding: 0.7em;
   }
   .prestation-section .prestation-article .prestation-box-div .prestation-card-div p {
     margin-top: 1em;
@@ -686,7 +693,12 @@ footer .footer-bottom-section p {
     margin: 3em 0;
   }
   .about-section {
-    padding: 2em 0;
+    padding: 0;
+    height: auto;
+  }
+  .about-section .box-img-div {
+    padding: 1em 1em;
+    flex-direction: column;
   }
   .about-section .about-img-div {
     display: flex;
@@ -703,7 +715,7 @@ footer .footer-bottom-section p {
   }
   .about-section .about-text-div h2 {
     text-align: center;
-    margin: 0.1em 0 0.7em 0;
+    margin: 0.7em 0 0.7em 0;
   }
   .about-section .about-article {
     flex-direction: column;
@@ -723,7 +735,8 @@ footer .footer-bottom-section p {
     padding: 4em 0;
   }
   .realisation-section h2 {
-    width: 80%;
+    margin: 0.5em 0 1.8em 0;
+    padding: 0.2em 0.5em;
   }
   .realisation-section .realisation-article {
     padding: 0;

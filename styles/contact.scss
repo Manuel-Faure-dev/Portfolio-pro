@@ -62,7 +62,7 @@ header {
             }
             ul {
                 position: absolute;
-                top: 3.8em;
+                top: 3.1em;
                 right: 0;
                 font-size: 1em;
                 display: flex;
@@ -115,6 +115,7 @@ h2 {
 }
 .text-p {
     font-size: 2.3em;
+    text-align: center;
 }
 
 main {
@@ -245,7 +246,6 @@ form {
     border-radius: 30px;
     background-color: #1d6474;
     box-shadow: 4px 4px 10px rgb(108, 108, 108);
-    //font-family: 'IBM Plex Sans', sans-serif;
 }
 .form-left-decoration,
 .form-right-decoration {
@@ -332,7 +332,6 @@ button {
     font-weight: 500;
     color: #4e5a5b;
     font-family: 'IBM Plex Sans', sans-serif;
-    //text-shadow: 1px 1px 1px black;
 }
 button:hover {
     background: #a7e9a7;
@@ -343,7 +342,22 @@ button:hover {
 @media screen and (max-width: 768px) {
     body {
         padding: 0;
+        .container {
+            row-gap: 1.5em;
+        }
+        .container .card {
+            margin: 0;
+            width: 95%;
+            height: 20em;
+        }
+        h2 {
+            margin: 0 0 1em 0;
+        }
+        .text-p {
+            margin-top: 1em;
+        }
     }
+
     header {
         nav {
             justify-content: space-evenly;
@@ -364,7 +378,8 @@ button:hover {
         }
     }
     form {
-        width: 95%;
+        width: 98%;
+        border-radius: 10px;
     }
     .form-left-decoration,
     .form-right-decoration,
@@ -372,6 +387,12 @@ button:hover {
         display: none;
     }
     .form-inner {
-        padding: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border-radius: none;
+        input,
+        textarea {
+            border-radius: 10px;
+        }
     }
 }
