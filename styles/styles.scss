@@ -139,6 +139,7 @@ header {
     background-image: url('../assets/background-vercors.webp');
     height: 100vh;
     z-index: 1;
+    box-shadow: 0px 0px 5px black;
     .presentation-div {
         display: flex;
         flex-direction: column;
@@ -211,54 +212,14 @@ header {
     .about-article {
         display: flex;
         align-items: center;
-        //position: relative;
     }
-    // .box-img-div {
-    //     display: flex;
-    //     padding: 3em 4em;
-    //     border-top: 15px solid #1c6474;
-    //     border-bottom: 15px solid #1c6474;
-    //     border-left: 15px solid #a8d5d8;
-    //     border-right: 15px solid #a8d5d8;
-    // }
-
-    // .about-img-div {
-    //     box-shadow: 2px 2px 12px rgb(81, 81, 81);
-    //     object-fit: cover;
-    //     background-color: #e2e0dd;
-    //     border-radius: 0.2em;
-    //     display: flex;
-    //     .about-img {
-    //         height: auto;
-    //         width: 22em;
-    //         border-radius: 0.2em;
-    //     }
-    // }
-    // .about-text-div {
-    //     padding: 0 0 0 4em;
-    //     display: flex;
-    //     flex-direction: column;
-    //     row-gap: 1.3em;
-    //     h2 {
-    //         font-size: 2.3em;
-    //     }
-    //     b {
-    //         font-style: italic;
-    //         font-size: 1.1em;
-    //     }
-    //     p {
-    //         font-size: 1.2em;
-    //         line-height: 1.7em;
-    //     }
-    // }
-    // Second About div qui s'active en version tablette
     .about-text-div-after {
         padding: 4em 2em;
         border-top: 15px solid #1c6474;
         border-bottom: 15px solid #1c6474;
         border-left: 15px solid #a8d5d8;
         border-right: 15px solid #a8d5d8;
-        box-shadow: 2px 2px 12px rgb(81, 81, 81);
+        box-shadow: 4px 4px 12px rgb(0, 0, 0);
         object-fit: cover;
         border-radius: 0.2em;
 
@@ -294,7 +255,6 @@ header {
     color: #2e4a66;
     background-color: #a8d5d8;
     position: relative;
-    //height: 100vh;
     .prestation-article {
         padding: 6em 0;
         .prestation-text-div {
@@ -400,7 +360,6 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 7em 0 7em 0;
-    box-shadow: 0px 0px 5px black;
 
     // Animation h2
     @keyframes tipsy {
@@ -439,7 +398,6 @@ header {
             box-shadow: 0px 0px 10px rgb(161, 161, 161);
             width: 47%;
             transition: all 1000ms ease-in-out;
-            transform: rotate(720deg);
             cursor: pointer;
             img {
                 object-fit: cover;
@@ -703,7 +661,7 @@ footer {
         flex-direction: column;
     }
     .about-section {
-        padding: 2em 0;
+        padding: 2em 0 3em 0;
         height: auto;
     }
     .about-article {
@@ -812,7 +770,7 @@ footer {
         }
     }
     .about-section {
-        padding: 0;
+        //padding: 0;
         height: auto;
         .box-img-div {
             padding: 1em 1em;
@@ -847,7 +805,7 @@ footer {
         // }
         .about-article {
             flex-direction: column;
-            padding: 0.1em 0;
+            padding: 0.1em 1em;
         }
     }
 
@@ -926,14 +884,14 @@ footer {
         justify-content: center;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 680px) {
     .about-section {
         .about-text-div-after {
             width: 100%;
-            padding: 1.5em 3em;
+            padding: 1.5em 1.7em;
 
             img {
-                max-width: 80%;
+                max-width: 85%;
                 margin: 0;
                 float: none;
             }
