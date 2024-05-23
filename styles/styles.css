@@ -74,7 +74,7 @@ header nav .dropdown-div span {
   transition: all 700ms ease-in-out;
 }
 header nav .dropdown-div span .fa-bars {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #cabb9a;
 }
 header nav .dropdown-div span:active + ul {
@@ -645,6 +645,9 @@ footer .footer-bottom-section p {
   }
   .prestation-section .prestation-article .prestation-box-div .prestation-card-div {
     width: 70%;
+  }
+  .prestation-section .prestation-article .prestation-box-div .prestation-card-div:hover {
+    transform: none;
   }
   .prestation-section::before {
     background-color: transparent;
