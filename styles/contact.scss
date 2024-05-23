@@ -340,10 +340,13 @@ button:hover {
 // Responsive
 
 @media screen and (max-width: 1024px) {
+    body .container .card .box:hover {
+        transform: none;
+    }
     header nav {
         padding: 0 0.5em;
         ul {
-            width: 70%;
+            width: 100%;
         }
     }
     form {
@@ -355,7 +358,7 @@ button:hover {
     body {
         padding: 0;
         main {
-            padding: 8em 0 4em 0;
+            padding: 8em 0 1em 0;
         }
         .container {
             row-gap: 1.5em;
@@ -405,13 +408,13 @@ button:hover {
     .form-inner {
         padding: 10px;
         border-radius: 10px;
-        border-radius: none;
+
         input,
         textarea {
             border-radius: 10px;
         }
         textarea {
-            height: 15em;
+            height: 17em;
         }
     }
 }

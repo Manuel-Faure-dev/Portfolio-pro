@@ -352,11 +352,14 @@ button:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  body .container .card .box:hover {
+    transform: none;
+  }
   header nav {
     padding: 0 0.5em;
   }
   header nav ul {
-    width: 70%;
+    width: 100%;
   }
   form {
     width: 80%;
@@ -367,7 +370,7 @@ button:hover {
     padding: 0;
   }
   body main {
-    padding: 8em 0 4em 0;
+    padding: 8em 0 1em 0;
   }
   body .container {
     row-gap: 1.5em;
@@ -411,13 +414,12 @@ button:hover {
   .form-inner {
     padding: 10px;
     border-radius: 10px;
-    border-radius: none;
   }
   .form-inner input,
   .form-inner textarea {
     border-radius: 10px;
   }
   .form-inner textarea {
-    height: 15em;
+    height: 17em;
   }
 }/*# sourceMappingURL=contact.css.map */

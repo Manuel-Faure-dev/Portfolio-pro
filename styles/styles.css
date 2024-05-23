@@ -8,6 +8,7 @@
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  overflow: auto;
 }
 body a {
   text-decoration: none;
@@ -381,6 +382,8 @@ header nav li:nth-child(6):hover {
   position: relative;
   box-shadow: 0px 0px 10px rgb(161, 161, 161);
   width: 47%;
+  transition: all 1000ms ease-in-out;
+  transform: rotate(720deg);
   cursor: pointer;
 }
 .realisation-section .realisation-article .realisation-card-div img {

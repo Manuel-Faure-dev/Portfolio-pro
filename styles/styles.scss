@@ -16,6 +16,7 @@ body {
         list-style-type: none;
     }
     font-family: 'IBM Plex Sans', sans-serif;
+    overflow: auto;
 }
 
 // Icone Chevron up
@@ -437,12 +438,16 @@ header {
             position: relative;
             box-shadow: 0px 0px 10px rgb(161, 161, 161);
             width: 47%;
+            transition: all 1000ms ease-in-out;
+            transform: rotate(720deg);
             cursor: pointer;
             img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
             }
+        }
+        .realisation-card-div {
         }
         .realisation-card-div:after {
             background-color: black;
