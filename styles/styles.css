@@ -578,7 +578,7 @@ footer .useful-link-div {
   flex-direction: column;
   align-items: flex-start;
 }
-footer .useful-link-div h4 {
+footer .useful-link-div h5 {
   font-size: 1.4em;
   margin: 0 0 0.5em 0;
 }
