@@ -53,8 +53,6 @@ const navBarLinks = document.querySelectorAll('.nav-item')
 
 navBarLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
-        //event.preventDefault() // Empêcher le comportement de clic par défaut
-
         const targetId = link.getAttribute('href').substring(1) // Récupérer l'identifiant de l'ancre
         const targetElement = document.getElementById(targetId) // Récupérer l'élément cible
 
